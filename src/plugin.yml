@@ -1,0 +1,17 @@
+name: BlackBiom
+main: de.BlackJoker.BlackBiom.BlackBiom
+author: BlackJoker
+version: 0.2
+commands:
+  changebiome:
+    description: command to change the biome 
+    usage: /<command>
+  biomes:
+    description: gives all possible biome changes
+    usage: /<command>
+permissions:
+  BlackBiom.*:
+    description: Gives access to all.
+    children:
+      BlackBiom.changebiome.*: false
+      BlackBiom.biomes.*: false
